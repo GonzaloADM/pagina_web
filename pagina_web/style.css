@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Silkscreen:wght@400;700&display=swap');
+
+@import url(./button.css);
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a{
+    cursor: pointer;
+    color: unset;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./imagenes/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.589);
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+header p {
+    font-size: 70px;
+}
+
+header .menu{
+    display: none;
+    font-size: 40px;
+    color:white;
+
+}
+
+@media (max-width: 1200px) {
+    
+    
+}
+
+@media (max-width: 600px) {
+    header nav{
+        display: none;
+}
+header .menu{
+    display: block;
+}
+}
+
