@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Silkscreen:wght@400;700&display=swap');
 
+@import url(./button.css);
+
+/*globales */
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-a{
+a {
     cursor: pointer;
     color: unset;
     text-decoration: none;
@@ -23,11 +26,16 @@ ul {
     list-style: none;
 }
 
+li {
+    color: white;
+}
+
+/* HEADER */
 header {
     display: flex;
-
     align-items: center;
     background-color: rgba(0, 0, 0, 0.589);
+    justify-content: center;
 }
 
 header ul {
@@ -36,12 +44,105 @@ header ul {
     justify-content: space-between;
     align-items: center;
     font-size: large;
+    color: rgb(255, 255, 255);
 }
 
 header p {
     font-size: 70px;
 }
 
-li {
+header .menu {
+    display: none;
+    font-size: 40px;
     color: white;
+
+}
+
+
+/* logo */
+.malware_404 {
+    max-width: 800px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 16px auto;
+    height: 100vh;
+}
+
+.malware_404 img{
+    width: 80%;
+}
+
+
+/* BOTON */
+.btn-content-inner {
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 16px auto;
+}
+
+.btn-content.btn-download{
+    background-color: black ;
+}
+
+.btn-download .btn-content-inner::before{
+    text-decoration: line-through;
+}
+
+/* informacion del malware 404 */
+.informacion_2 {
+    background-color: #473d3e85;
+    max-width: 800px;
+    text-align: center;
+    border: 3px solid rgb(14, 13, 13);
+    border-radius: 30px;
+    margin: 0px auto;
+    color: #fdfdfd;
+    padding: 16px;
+}
+
+.informacion_2 h2,
+.formulario h2 {
+    text-shadow: 2px 2px 0px black;
+}
+
+/* formulario */
+
+.formulario {
+    max-width: 800px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 64px auto;
+    color: #fdfdfd;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formulario h2 {
+    font-size: 40px;
+}
+
+.btn-content.btn-form{
+    background-color: gray ;
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1200px) {
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+
+    }
+
+    header{
+        justify-content: space-around;
+    }
 }
